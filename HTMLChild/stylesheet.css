@@ -1,0 +1,153 @@
+	/* Style the header */
+	header {
+		background-color: #ffffff; /* set your desired background color */
+		padding: 10px;
+		text-align: center;
+	}
+
+	.logo {
+		display: inline-block;
+	}
+
+	.logo img {
+		height: auto;
+		max-width: 50%;
+	}
+
+	.book-info-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.book-image {
+		flex: 0.2 1 auto; 
+		margin-right:20px;
+		max-width: 100%;
+	}
+
+	.book-image img {
+		max-width: 100%;
+	}
+
+	.book-details {
+		flex: 2 1 400px;
+	}
+
+	.book-details h2 {
+		font-size: 40px;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	.book-details p {
+		font-size: 20px;
+		line-height: 2;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	.book-details p span {
+		font-weight: bold;
+	}
+
+
+	/* Style heading 1 */
+
+h1{
+		font-family: "OpenDyslexicArabic-Bold", Arial, sans-serif;
+		font-size: 3rem;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: -2rem;
+		margin-top: 2rem;
+		padding-bottom:0;
+		line-height: 0.5; /* Reduce line spacing */
+		text-transform: uppercase;
+		direction: rtl;
+	}
+
+	/* Share Buttons */
+
+	   .share-btn-container {
+	   
+	   	display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-left: 100px; 
+		background: #fff;
+		display: flex;
+		flex: 2 1 auto;
+		align-items: center;
+		justify-content: right;
+		flex-direction: row;
+		/*padding: 16px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+		position: fixed; 
+		top: 85%; 
+		transform: translateY(-50%);
+		}
+
+	.share-btn-container a i {
+		font-size: 32px;
+	}
+
+	.share-btn-container a {
+		display: inline-block;
+		padding-left: 30px;
+		margin-right: 10px; /* Optional: add some space between the buttons */
+		margin: 20px 0;
+		transition: 500ms;
+	} 
+
+
+	.share-btn-container a:hover {
+		transform: scale(1.2);
+	}
+
+	.share-btn-container .fa-facebook {
+		color: #3b5998;
+	}
+
+	.share-btn-container .fa-twitter {
+		color: #1da1f2;
+	}
+
+	.share-btn-container .fa-linkedin {
+		color: #0077b5;
+	}
+
+	.share-btn-container .fa-whatsapp {
+		color: #25d366;
+	}
+
+
+	@media (max-width: 767px) {
+		.book-info-container {
+			flex-direction: column;
+		}
+
+		.book-image {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		.book-details {
+			flex: 1 1 auto;
+		}
+
+	h1 {
+		font-size: 2.5rem;
+		}
+	}
+		
+
+	
+	
+
